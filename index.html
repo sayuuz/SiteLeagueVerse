@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeagueVerse</title>
+
+    <!-- Bootstrap CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- FavIcon -->
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top bg-primary-color" id="navbar">
+        <div class="container py-3">
+            <a href="#" class="navbar-brand">
+                <img src="assets/img/icon.png" alt="icone">
+                <span>LeagueVerse</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-items" aria-controls="navbar-items" aria-expanded="false" aria-label="Toggle-navigation">
+                <i class="bi bi-list"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-items">
+                <ul class="navbar-nav me-auto mb-2mb-lg-0">
+                    <li class="nav-item">
+                        <a href="" class="nav-link active primary-color" aria-current="page">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://universe.leagueoflegends.com/pt_BR/explore/everything/newest/" target="_blank" class="nav-link primary-color">Contos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://universe.leagueoflegends.com/pt_BR/regions/" target="_blank" class="nav-link primary-color">Regiões</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://map.leagueoflegends.com/pt_BR" target="_blank" class="nav-link primary-color">Explore</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Slider -->
+    <div class="container" id="slider-container">
+        <div class="carousel slide" id="slider" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" class="active" data-bs-target="#slider" data-bs-slide-to="0" aria-current="true" aria-label="Slide1"></button>
+                <button type="button" class="active" data-bs-target="#slider" data-bs-slide-to="1" aria-label="Slide2"></button>
+                <button type="button" class="active" data-bs-target="#slider" data-bs-slide-to="2" aria-label="Slide3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/img/banner-1.jpg" alt="Casa1" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h5>Bombolini e os Rapazes</h5>
+                        <a href="https://universe.leagueoflegends.com/pt_BR/story/the-boys-and-bombolini/" target="_blank" class="btn btn-dark">Ler Agora</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/banner-2.jpg" alt="Casa2" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h5>Região: Ionia</h5>
+                        <a href="https://universe.leagueoflegends.com/pt_BR/region/ionia/" target="_blank" class="btn btn-dark">Conhecer</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/banner-3.jpeg" alt="Casa2" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h5>Mapa Interativo</h5>
+                        <a href="https://map.leagueoflegends.com/pt_BR" target="_blank" class="btn btn-dark">Explorar</a>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="carousel-control-prev" data-bs-target="#slider" data-bs-slide="prev">
+                <i class="bi bi-chevron-compact-left"></i>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button type="button" class="carousel-control-next" data-bs-target="#slider" data-bs-slide="next">
+                <i class="bi bi-chevron-compact-right"></i>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- Mini Banners -->
+        <div class="col-12 col-md-10 offset-md-1" id="mini-banners">
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <div class="card text-center">
+                        <i class="bi bi-collection-play primary-color"></i>
+                        <div class="card-body">
+                            <h5 class="card-title primary-color">Arcane</h5>
+                            <p class="card-text secondary-color">Uma série da Netflix que conta a história de Jinx e Vi em Zaun.</p>
+                            <a href="https://www.netflix.com/br/title/81435684" target="_blank" class="btn btn-dark">Saber Mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card text-center">
+                        <i class="bi bi-joystick primary-color"></i>
+                        <div class="card-body">
+                            <h5 class="card-title primary-color">TFT</h5>
+                            <p class="card-text secondary-color">Autobattle Chess desenvolvido pela Riot Games</p>
+                            <a href="https://teamfighttactics.leagueoflegends.com/pt-br/" target="_blank" class="btn btn-dark">Saber Mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card text-center">
+                        <i class="bi bi-controller primary-color"></i>
+                        <div class="card-body">
+                            <h5 class="card-title primary-color">Ruined King</h5>
+                            <p class="card-text secondary-color">Um RPG sobre os protagonistas em busca de derrotar Viego.</p>
+                            <a href="https://store.steampowered.com/app/1276790/Ruined_King_A_League_of_Legends_Story/" target="_blank" class="btn btn-dark">Saber Mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Destaques -->
+    <div class="container" id="featured-container">
+        <div class="col-12">
+            <h2 class="title primary-color">Histórias em Destaque</h2>
+            <p class="subtitle secondary-color">Conheça algumas das melhores histórias do LeagueVerse</p>
+        </div>
+        <div class="col-12" id="featured-images">
+            <div class="row g-4">
+                <div class="col-12 col-md-4">
+                    <img src="assets/img/project-1.jpg" alt="Projeto1" class="img-fluid">
+                    <div class="banner-content">
+                        <p class="secondary-color">Luery Shaw</p>
+                        <h3>Ascenda Comigo</h3>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <img src="assets/img/project-2.jpg" alt="Projeto2" class="img-fluid">
+                    <div class="banner-content">
+                        <p class="secondary-color">Riot Games</p>
+                        <h3>O Lamento do Príncipe</h3>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <img src="assets/img/project-3.jpg" alt="Projeto3" class="img-fluid">
+                    <div class="banner-content">
+                        <p class="secondary-color">Luery Shaw</p>
+                        <h3>Tapeçaria do Vazio</h3>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <img src="assets/img/project-4.jpg" alt="Projeto4" class="img-fluid">
+                    <div class="banner-content">
+                        <p class="secondary-color">John O'bryan</p>
+                        <h3>O Propósito da Tristeza</h3>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <img src="assets/img/project-5.jpg" alt="Projeto5" class="img-fluid">
+                    <div class="banner-content">
+                        <p class="secondary-color">Laura Michet</p>
+                        <h3>Gorjeta Suada</h3>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <img src="assets/img/project-6.jpg" alt="Projeto6" class="img-fluid">
+                    <div class="banner-content">
+                        <p class="secondary-color">Michael Luo</p>
+                        <h3>As Caminhadas</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Info-->
+    <div class="container" id="info-container">
+        <div class="col-12">
+            <h2 class="title primary-color">Detalhes Importantes</h2>
+            <p class="subtitle secondary-color">Entenda o que é o LeagueVerse</p>
+        </div>
+        <div class="col-12">
+            <div class="row">
+                <div class="col-12 col-md-5" id="info-banner">
+                    <img src="assets/img/infobanner.jpg" alt="informações da empresa" class="img-fluid">
+                </div>
+                <div class="col-12 col-md-7 bg-secondary-color" id="info-content">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2 class="title primary-color">Um pouco sobre o jogo</h2>
+                            <p class="subtitle secondary-color">O LeagueVerse é o universo alternativo criado para narrar a história que se passa em League of Legends. Situados no planeta de Runeterra, onde muitas magias e guerras acontecem, só os mais corajosos sobrevivem.</p>
+                        </div>
+                        <div class="col-12" id="info-numbers">
+                            <div class="row">
+                                <div class="col-4">
+                                    <h3 class="primary-color">+120</h3>
+                                    <p class="secondary-color">Campeões</p>
+                                </div>
+                                <div class="col-4">
+                                    <h3 class="primary-color">10</h3>
+                                    <p class="secondary-color">Regiões</p>
+                                </div>
+                                <div class="col-4">
+                                    <h3 class="primary-color">+500</h3>
+                                    <p class="secondary-color">Historias e contos</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <a href="https://universe.leagueoflegends.com/pt_br/" target="_blank" class="btn btn-dark">Saber mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Footer-->
+    <footer class="container-fluidbg bg-dark-color" id="footer">
+        <div class="container">
+            <div class="row">
+                <!---Footer Top-->
+                <div class="col-12" id="footer-top">
+                    <div class="row justfy-content-between">
+                        <div class="col-4">
+                            <h2>LeagueVerse</h2>
+                        </div>
+                        <div class="col-4" id="social-icons">
+                            <i class="bi bi-facebook"></i>
+                            <i class="bi bi-instagram"></i>
+                            <i class="bi bi-youtube"></i>
+                            <i class="bi bi-twitter"></i>
+                            <i class="bi bi-whatsapp"></i>
+                        </div>
+                    </div>
+                </div>
+                <!--Footer Details-->
+                <div class="col-12" id="footer-details">
+                    <div class="row">
+                        <div class="col-12 col-md-4" id="news-container">
+                            <h4>Fique por dentro das novidades</h4>
+                            <p class="secondary-color">Inscreva-se para saber em primeira mão</p>
+                            <form>
+                                <div class="mb-3">
+                                    <input type="email" class="form-control" placeholder="Digite seu e-mail">
+                                </div>
+                                <button class="btn btn-dark" type="submit">Inscrever</button>
+                            </form>
+                        </div>
+                        <div class="col-12 col-md-4" id="contact-container">
+                            <h4>Formas de Contato</h4>
+                            <p class="secondary-color">(16)99999-9999</p>
+                            <p class="secondary-color">contato@leagueverse.com</p>
+                        </div>
+                        <div class="col-12 col-md-4" id="links-container">
+                            <div class="row">
+                                <h4>Você pode estar procurando por:</h4>
+                                <div class="col-6">
+                                    <ul class="list-unstyled">
+                                        <li><a href="#" class="secondary-color">Campeões</a></li>
+                                        <li><a href="#" class="secondary-color">Regiões</a></li>
+                                        <li><a href="#" class="secondary-color">Quadrinhos</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-6">
+                                    <ul class="list-unstyled">
+                                        <li><a href="#" class="secondary-color">Contos</a></li>
+                                        <li><a href="#" class="secondary-color">Trabalhe Conosco</a></li>
+                                        <li><a href="#" class="secondary-color">Contato</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Footer Bottom-->
+                <div class="col-12" id="footer-bottom">
+                    <div class="row justify-content-between">
+                        <div class="col-12 col-md-3">
+                            <p class="secondary-color">Riot Games &copy; 2022 Todos os direitos reservados</p>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <p class="secondary-color">"O Coração é o Musculo Mais Forte"<i class="bi bi-heart"></i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
